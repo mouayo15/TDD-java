@@ -29,11 +29,10 @@ public class personnageTest {
     @Test
     public void attaquerAutrePersonnage() {
         personnage attaquant = new personnage();
-        personnage victime = new personnage();
-        int pointDeVieAvantAttaque = victime.getPointDeVie();
+        personnage adversaire = new personnage();
+        int pointDeVieAvantAttaque = adversaire.getPointDeVie();
         int degat = attaquant.getPuissanceAttaque();
-        	
-        attaquant.attaquer(victime, degat);
-        assertEquals(pointDeVieAvantAttaque - attaquant.getPuissanceAttaque(), victime.getPointDeVie());
+        attaquant.attaquer(adversaire, degat);
+        assertEquals(pointDeVieAvantAttaque - attaquant.getPuissanceAttaque(), adversaire.getPointDeVie());
     }
 }

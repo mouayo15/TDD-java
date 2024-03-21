@@ -3,6 +3,7 @@ public class personnage {
 	
 private int pointDeVie=100;
 private boolean estMort= false;
+private int puissanceAttaque;
 
 
 public int getPointDeVie() {
@@ -37,7 +38,7 @@ private void subirDegats(int degats) {
 }
 public int getPuissanceAttaque() {
 	// TODO Auto-generated method stub
-	return 0;
+	return this.puissanceAttaque;
 }
 
 }
