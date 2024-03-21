@@ -35,5 +35,9 @@ private void subirDegats(int degats) {
         pointDeVie = 0;
     }
 }
+public int getPuissanceAttaque() {
+	// TODO Auto-generated method stub
+	return 0;
+}
 
 }

@@ -25,4 +25,15 @@ public class personnageTest {
         assertEquals(0, personnage.getPointDeVie());
         assertTrue(personnage.isEstMort());
     }
+    
+    @Test
+    public void attaquerAutrePersonnage() {
+        personnage attaquant = new personnage();
+        personnage victime = new personnage();
+        int pointDeVieAvantAttaque = victime.getPointDeVie();
+        int degat = attaquant.getPuissanceAttaque();
+        	
+        attaquant.attaquer(victime, degat);
+        assertEquals(pointDeVieAvantAttaque - attaquant.getPuissanceAttaque(), victime.getPointDeVie());
+    }
 }
