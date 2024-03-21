@@ -23,4 +23,17 @@ public void Tuer() {
 	this.estMort=true;
 }
 
+public void attaquer(personnage cible, int degats) {
+    if (!cible.isEstMort()) {
+        cible.subirDegats(degats);
+    }
+}
+private void subirDegats(int degats) {
+	// TODO Auto-generated method stub
+	pointDeVie -= degats;
+    if (pointDeVie < 0) {
+        pointDeVie = 0;
+    }
+}
+
 }
